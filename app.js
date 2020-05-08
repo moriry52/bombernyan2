@@ -8,7 +8,7 @@ app.listen(port);
 console.log("port", port)
 
 function handler(req, res) {
-	fs.readFile(__dirname + '/bomber.html',
+	fs.readFile(__dirname + '/index.html',
 		function (err, data) {
 			if (err) {
 				res.writeHead(500);
